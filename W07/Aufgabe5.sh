@@ -7,7 +7,7 @@ cd countries
 
 while read line
 do
-  cat ../worldcupplayerinfo.txt | grep "$line" >> "$line.txt"
+  cat ../worldcupplayerinfo.txt | grep "$line" > "$line.txt"
 done < ../countries.txt
 
 
